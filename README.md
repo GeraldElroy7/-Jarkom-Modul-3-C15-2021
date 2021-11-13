@@ -481,4 +481,125 @@ Berikut hasil `lynx google.com` yang akan melakukan _redirect_ menuju `super.fra
 
 ![image](https://user-images.githubusercontent.com/64303057/141642121-e83b4620-3401-4aeb-99f9-2331814dfa98.png)
 
+
+# Nomor 12
+Saatnya berlayar! Luffy dan Zoro akhirnya memutuskan untuk berlayar untuk mencari harta karun di super.franky.yyy.com. Tugas pencarian dibagi menjadi dua misi, Luffy bertugas untuk mendapatkan gambar (.png, .jpg), sedangkan Zoro mendapatkan sisanya. Karena Luffy orangnya sangat teliti untuk mencari harta karun, ketika ia berhasil mendapatkan gambar, ia mendapatkan gambar dan melihatnya dengan kecepatan 10 kbps (12)
+
+#### Langkah pengerjaan :
+
+### Water7
+- Buat file `ext.txt` dengan isian seperti gambar, pada direktori `/etc/squid/ext.txt`
+  ![image](https://user-images.githubusercontent.com/90212308/141644400-ec2194a7-6673-40e8-9b33-0809dc8b2f5d.png)
+
+- Kemudian tambahkan config pada file `/etc/squid/squid.conf`
+  ```    delay_pools 1
+    delay_class 1 1
+    delay_parameters 1 1250/1250
+    delay_access 1 allow luffy
+    delay_access 1 deny all
+   ```
+    
+- Restart squid dengan `service squid restart` 
+
+### Loguetown
+- Buka `super.franky.c15.com` dengan `lynx` dan download file `background-frank.jpg`
+
+  ![image](https://user-images.githubusercontent.com/90212308/141645055-8b03a0d4-a56b-48d1-bbb0-65ae007f0191.png)
+  
+  ![image](https://user-images.githubusercontent.com/90212308/141644663-db27d3dd-8655-4a6b-a358-24fb636a9cba.png)
+    
+  terlihat pada gambar diatas download file dibatasi dengan kecepatan download 10kbps
+
+# Nomor 13
+Sedangkan, Zoro yang sangat bersemangat untuk mencari harta karun, sehingga kecepatan kapal Zoro tidak dibatasi ketika sudah mendapatkan harta yang diinginkannya (13).
+
+#### Langkah Pengerjaan
+
+### Water7
+- Buka file config `/etc/squid/squid.conf`
+- tambahkan config tersebut dengan config 
+
+  ```acl USER1 proxy_auth luffybelikapalc15
+     acl USER2 proxy_auth zorobelikapalc15
+     acl BLACKLIST dstdomain .google.com
+     acl ext_block url_regex "/etc/squid/ext.txt"
+
+     delay_pools 2
+     delay_class 1 1
+     delay_parameters 1 1250/1250
+     delay_access 1 allow luffy
+     delay_access 1 deny all
+     delay_class 2 1
+     delay_parameters 2 none
+     delay_access 2 allow !luffy
+  ```
+- Kemudian restart squid `service squid restart`
+  
+### Loguetown
+- jalankan perintah `export http_proxy="http://jualbelikapalc15.com:5000"`
+- Buka `super.franky.c15.com` dengan `lynx`
+- Download salah satu file dari laman tersebut
+  
+  ![image](https://user-images.githubusercontent.com/90212308/141645684-1aa12b6b-ebb3-42d7-806f-255516c12ed6.png)
+
+# Nomor 12
+Saatnya berlayar! Luffy dan Zoro akhirnya memutuskan untuk berlayar untuk mencari harta karun di super.franky.yyy.com. Tugas pencarian dibagi menjadi dua misi, Luffy bertugas untuk mendapatkan gambar (.png, .jpg), sedangkan Zoro mendapatkan sisanya. Karena Luffy orangnya sangat teliti untuk mencari harta karun, ketika ia berhasil mendapatkan gambar, ia mendapatkan gambar dan melihatnya dengan kecepatan 10 kbps (12)
+
+#### Langkah pengerjaan :
+
+### Water7
+- Buat file `ext.txt` dengan isian seperti gambar, pada direktori `/etc/squid/ext.txt`
+  ![image](https://user-images.githubusercontent.com/90212308/141644400-ec2194a7-6673-40e8-9b33-0809dc8b2f5d.png)
+
+- Kemudian tambahkan config pada file `/etc/squid/squid.conf`
+  ```
+  delay_pools 1
+  delay_class 1 1
+  delay_parameters 1 1250/1250
+  delay_access 1 allow luffy
+  delay_access 1 deny all
+  ```
+    
+- Restart squid dengan `service squid restart` 
+
+### Loguetown
+- Buka `super.franky.c15.com` dengan `lynx` dan download file `background-frank.jpg`
+
+  ![image](https://user-images.githubusercontent.com/90212308/141645055-8b03a0d4-a56b-48d1-bbb0-65ae007f0191.png)
+  
+  ![image](https://user-images.githubusercontent.com/90212308/141644663-db27d3dd-8655-4a6b-a358-24fb636a9cba.png)
+    
+  terlihat pada gambar diatas download file dibatasi dengan kecepatan download 10kbps
+
+# Nomor 13
+Sedangkan, Zoro yang sangat bersemangat untuk mencari harta karun, sehingga kecepatan kapal Zoro tidak dibatasi ketika sudah mendapatkan harta yang diinginkannya (13).
+
+#### Langkah Pengerjaan
+
+### Water7
+- Buka file config `/etc/squid/squid.conf`
+- tambahkan config tersebut dengan config 
+
+  ```acl USER1 proxy_auth luffybelikapalc15
+     acl USER2 proxy_auth zorobelikapalc15
+     acl BLACKLIST dstdomain .google.com
+     acl ext_block url_regex "/etc/squid/ext.txt"
+
+     delay_pools 2
+     delay_class 1 1
+     delay_parameters 1 1250/1250
+     delay_access 1 allow luffy
+     delay_access 1 deny all
+     delay_class 2 1
+     delay_parameters 2 none
+     delay_access 2 allow !luffy
+  ```
+- Kemudian restart squid `service squid restart`
+  
+### Loguetown
+- jalankan perintah `export http_proxy="http://jualbelikapalc15.com:5000"`
+- Buka `super.franky.c15.com` dengan `lynx`
+- Download salah satu file dari laman tersebut
+  
+  ![image](https://user-images.githubusercontent.com/90212308/141645684-1aa12b6b-ebb3-42d7-806f-255516c12ed6.png)
 `
