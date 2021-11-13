@@ -551,4 +551,7 @@ Sedangkan, Zoro yang sangat bersemangat untuk mencari harta karun, sehingga kece
 - Download salah satu file dari laman tersebut
   
   ![image](https://user-images.githubusercontent.com/90212308/141645684-1aa12b6b-ebb3-42d7-806f-255516c12ed6.png)
+
+#### Kendala
+- Penerapan DHCP relay
 `
