@@ -457,8 +457,8 @@ serta lakukan unzip `unzip super.franky.zip`
 - Pindahkan file `error` & `public` ke `super.franky.c15.com` seperti berikut :
 
 ```
-cp -r /root/super.franky/error /var/www/super.franky.E08.com
-cp -r /root/super.franky/public /var/www/super.franky.E08.com
+cp -r /root/super.franky/error /var/www/super.franky.c15.com
+cp -r /root/super.franky/public /var/www/super.franky.c15.com
 ```
 
 ### Water7
