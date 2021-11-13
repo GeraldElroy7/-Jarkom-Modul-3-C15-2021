@@ -554,4 +554,5 @@ Sedangkan, Zoro yang sangat bersemangat untuk mencari harta karun, sehingga kece
 
 #### Kendala
 - Penerapan DHCP relay
+- Ada kendala pada soal 12 dan 13 dalam pengecekan delay bandwidth.
 `
