@@ -549,6 +549,7 @@ Saatnya berlayar! Luffy dan Zoro akhirnya memutuskan untuk berlayar untuk mencar
 
 ### Water7
 - Buat file `ext.txt` dengan isian seperti gambar, pada direktori `/etc/squid/ext.txt`
+
   ![image](https://user-images.githubusercontent.com/90212308/141644400-ec2194a7-6673-40e8-9b33-0809dc8b2f5d.png)
 
 - Kemudian tambahkan config pada file `/etc/squid/squid.conf`
